@@ -38,9 +38,7 @@ const loadContent = (person) => {
 
   elementContent.avatarImage.setAttribute(
     "href",
-    "data:image/png;base64," +
-      // + person.avatarImage
-      ""
+    "data:image/png;base64," + person.avatarImage
   );
   elementContent.avatarImage.setAttribute("x", person.avatarAlignX);
   elementContent.avatarImage.setAttribute("y", person.avatarAlignY);

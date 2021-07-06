@@ -7,7 +7,7 @@
 
   /*========== Colors ==========*/
   /* Change favorite color */
-  --hue-color: 130; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+  --hue-color: 0; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
   /* HSL color mode */
   --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -196,6 +196,7 @@ img {
 
 .nav__logo:hover {
   color: var(--first-color);
+  cursor: pointer;
 }
 
 .nav__toggle {
@@ -352,7 +353,9 @@ img {
 .home__info-arrow {
   font-size: 1.25rem;
 }
-
+.home__save-btn:hover {
+  cursor: pointer;
+}
 /*==================== BUTTONS ====================*/
 .button {
   display: inline-block;

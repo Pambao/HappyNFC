@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link id="tab-icon" rel="icon"/>
     <!--==================== UNICONS ====================-->
     <link
       rel="stylesheet"
@@ -15,53 +15,28 @@
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Responsive Portfolio Website</title>
+    <title id="site-title"></title>
   </head>
   <body>
     <!--==================== HEADER ====================-->
-    <header class="header" id="header">
+    <header id="header" class="header">
       <nav class="nav container">
-        <a href="#" class="nav__logo" id="name">Van Tuyet Trinh</a>
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list grid">
-            <li class="nav__item">
-              <a href="#home" class="nav__link">
-                <i class="uil uil-estate nav__icon"></i> Home
+        <div id="logo-name" class="nav__logo"></div>
+        <div id="nav-menu" class="nav__menu">
+          <ul id="nav-list" class="nav__list grid">
+            <!-- <li class="nav__item">
+              <a href="tel:+84772797328" target="_blank" class="nav__link">
+                <i class="uil uil-phone-alt nav__icon"></i> Phone
               </a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">
-                <i class="uil uil-user nav__icon"></i> About
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">
-                <i class="uil uil-file-alt nav__icon"></i> Skills
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#services" class="nav__link">
-                <i class="uil uil-briefcase-alt nav__icon"></i> Services
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#portfolio" class="nav__link">
-                <i class="uil uil-scenery nav__icon"></i> Portfolio
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">
-                <i class="uil uil-message nav__icon"></i> Contactme
-              </a>
-            </li>
-            <i class="uil uil-times nav__close" id="nav-close"></i>
+            </li> -->
+            <i id="nav-close" class="uil uil-times nav__close"></i>
           </ul>
         </div>
 
         <div class="nav__btns">
             <!-- Theme change button -->
-            <i class="uil uil-moon change-theme"  id="theme-button"></i>
-            <div class="nav__toggle" id="nav-toggle">
+            <i id="theme-button" class="uil uil-moon change-theme"></i>
+            <div id="nav-toggle" class="nav__toggle">
             <i class="uil uil-apps"></i>
           </div>
         </div>
@@ -71,21 +46,13 @@
     <!--==================== MAIN ====================-->
     <main class="main">
       <!--==================== HOME ====================-->
-      <section class="home section" id="home">
-        <div class="home__container container grid" id="home-container">
+      <section id="home" class="home section">
+        <div id="home-container" class="home__container container grid">
           <div class="home__content grid">
-            <div class="home__social">
-              <a href="#" target="_blank" class="home__social-icon">
-                <i class="uil uil-linkedin-alt"></i>
-              </a>
-              <a href="#" target="_blank" class="home__social-icon">
-                <i class="uil uil-facebook-messenger-alt"></i>
-              </a>
-              <a href="#" target="_blank" class="home__social-icon">
-                <i class="uil uil-instagram"></i> </a
-              ><a href="#" target="_blank" class="home__social-icon">
-                <i class="uil uil-instagram"></i>
-              </a>
+            <div id="social-contact" class="home__social">
+              <!-- <a href="" target="_blank" class="home__social-icon">
+                <i class="uil uil-facebook-f"></i>
+              </a> -->
             </div>
 
             <div class="home__img">
@@ -111,29 +78,24 @@
                         -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
                   />
                   <image
+                    id = "avatar-image"
                     class="home__blob-img"
-                    x="12"
-                    y="16"
-                    href="assets/img/perfil1.png"
                   />
                 </g>
               </svg>
             </div>
 
             <div class="home__data">
-              <h1 class="home__title">Hi, I'am Trinh</h1>
-              <h3 class="home__subtitle">Frontend developer</h3>
-              <p class="home__description">
-                High level experience in web design and development knowledge,
-                producing quality work.
-              </p>
-              <a href="#contact" class="button button--flex">
+              <h1 id="greeting" class="home__title"></h1>
+              <h3 id="role" class="home__subtitle"></h3>
+              <p id="statement" class="home__description"></p>
+              <div class="home__save-btn button button--flex">
                 Contact Me <i class="uil uil-message button__icon"></i>
-              </a>
+              </div>
             </div>
           </div>
 
-          <div class="home__info" id="home-info">
+          <div id="home-info" class="home__info">
             <a href="#about" class="home__info-button button--flex">
                 <!-- <i class="uil uil-apps home__more-mouse"></i> -->
               <i class="uil uil-apps home__info-mouse"></i>

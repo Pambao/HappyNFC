@@ -43,6 +43,7 @@ const loadContent = (person) => {
     "href",
     "data:image/png;base64," + person.avatarImage
   );
+  elementContent.avatarImage.style.transform = `scale(${person.avatarScale})`;
   elementContent.avatarImage.setAttribute("x", person.avatarAlignX);
   elementContent.avatarImage.setAttribute("y", person.avatarAlignY);
 

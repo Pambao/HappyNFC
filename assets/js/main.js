@@ -176,7 +176,7 @@ themeButton.addEventListener("click", () => {
 const url_string = window.location.href;
 const url = new URL(url_string);
 var param = url.searchParams.get("name");
-param = param === null ? "Van Tuyet Trinh" : param;
+param = param === null ? "Pham Gia Bao" : param;
 
 /*==================== REQUEST DATA ====================*/
 const Http = new XMLHttpRequest();

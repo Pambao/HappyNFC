@@ -29,7 +29,10 @@ const elementContent = {
 /*==================== RENDER FROM DATA FUNCTIONS ====================*/
 const loadContent = (person) => {
   elementContent.siteTitle.innerHTML = person.name;
-  elementContent.tabIcon.href = person.avatarImage;
+  elementContent.tabIcon.setAttribute(
+    "href",
+    "data:image/png;base64," + person.avatarImage
+  );
 
   elementContent.logo.innerHTML = person.name;
   elementContent.greeting.innerHTML = person.greeting;
